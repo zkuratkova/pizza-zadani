@@ -12,6 +12,15 @@
   text-align: center;
 }
 
-.check:hover {
+.check--disabled {
+  background-color: #bbb;
+}
+
+.check--disabled:hover {
+  transform: none;
+}
+
+.check:hover:not(.check--disabled) {
   transform: scale(1.1);
 }
+
