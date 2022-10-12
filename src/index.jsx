@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import Topping from './components/Topping';
+import ToppingsSelect from './components/ToppingsSelect';
 import './style.css';
 
 const toppings = [
@@ -74,15 +74,8 @@ const App = () => {
         <h1>Build your own pizza</h1>
       </header>
       <main>
-        <p>Choose as many toppings as you want</p>
-        <p>Selected toppings: 0, total price: 0 Euro</p>
-        <div class="toppings">
-          {toppings.map((topping) => (
-            <Topping topping={topping} key={topping.name} />
-          ))}
-        </div>
+        <ToppingsSelect toppings={toppings} />
       </main>
-      
     </div>
   );
 };

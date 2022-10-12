@@ -31,8 +31,3 @@ main {
   background-image: url(./img/pizza.svg);
   background-size: contain;
 }
-
-.toppings {
-  display: flex;
-  flex-wrap: wrap;
-}
